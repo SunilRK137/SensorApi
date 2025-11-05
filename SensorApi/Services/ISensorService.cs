@@ -1,5 +1,4 @@
 using SensorApi.DTOs;
-using SensorApi.Models;
 
 namespace SensorApi.Services;
 
