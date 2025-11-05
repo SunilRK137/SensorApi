@@ -1,5 +1,56 @@
 @SensorApi_HostAddress = http://localhost:5173
 
+### Get all sensors
+GET {{SensorApi_HostAddress}}/api/sensors
+Accept: application/json
+
+### Get sensor by id
+GET {{SensorApi_HostAddress}}/api/sensors/1
+Accept: application/json
+
+### Get active sensors only
+GET {{SensorApi_HostAddress}}/api/sensors/active
+Accept: application/json
+
+### Get sensors by type
+GET {{SensorApi_HostAddress}}/api/sensors/type/Temperature
+Accept: application/json
+
+### Create a new sensor
+POST {{SensorApi_HostAddress}}/api/sensors
+Content-Type: application/json
+
+{
+  "name": "Light Sensor",
+  "type": "Light",
+  "unit": "lux",
+  "minValue": 0,
+  "maxValue": 10000,
+  "lastReading": 450.5,
+  "lastReadingAt": "2025-11-06T10:30:00Z",
+  "isActive": true
+}
+
+### Update an existing sensor
+PUT {{SensorApi_HostAddress}}/api/sensors/1
+Content-Type: application/json
+
+{
+  "name": "Updated Temperature Sensor",
+  "type": "Temperature",
+  "unit": "°F",
+  "minValue": -40,
+  "maxValue": 257,
+  "lastReading": 72.5,
+  "lastReadingAt": "2025-11-06T11:00:00Z",
+  "isActive": true
+}
+
+### Delete a sensor
+DELETE {{SensorApi_HostAddress}}/api/sensors/3
+Accept: application/json
+
+### Get weather forecast (original endpoint)
 GET {{SensorApi_HostAddress}}/weatherforecast/
 Accept: application/json
 

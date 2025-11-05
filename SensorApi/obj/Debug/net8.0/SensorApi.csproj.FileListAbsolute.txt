@@ -32,3 +32,13 @@ D:\YdxDemo\SensorApi\SensorApi\obj\Debug\net8.0\refint\SensorApi.dll
 D:\YdxDemo\SensorApi\SensorApi\obj\Debug\net8.0\SensorApi.pdb
 D:\YdxDemo\SensorApi\SensorApi\obj\Debug\net8.0\SensorApi.genruntimeconfig.cache
 D:\YdxDemo\SensorApi\SensorApi\obj\Debug\net8.0\ref\SensorApi.dll
+d:\YdxDemo\SensorApi\SensorApi\obj\Debug\net8.0\SensorApi.sourcelink.json
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+d:\YdxDemo\SensorApi\SensorApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

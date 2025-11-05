@@ -1,6 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using SensorApi.Data;
+using SensorApi.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<SensorContext>(options =>
+    options.UseInMemoryDatabase("SensorDb"));
+
+builder.Services.AddScoped<ISensorService, SensorService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -20,4 +28,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+// Ensure database is created and seeded
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<SensorContext>();
+    context.Database.EnsureCreated();
+}
+
+await app.RunAsync();
